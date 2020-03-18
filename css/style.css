@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    position: fixed;
+    color: white;
+    top: 0;
+}
+
+header * {
+    display: inline-block;
+}
+
+header h1, nav {
+    width: 49%;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    width: 100px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.exp1 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp1 .img {
+    background-image: url(../img/exp-1.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.exp2 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp2 .img {
+    background-image: url(../img/exp-2.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+#contato {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+form *{
+    display: block;
+}
+
+input, textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+}
+
+@media (max-width:375px) {
+    .exp1 div, article {
+        display: block;
+        width: 100%;
+    }
+    .exp2 div, article {
+        display: block;
+        width: 100%; 
+    }
+
+    .exp2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .exp1 .img{
+        background-position: center;
+    }
+
+    .exp2 .img{
+        background-position: center;
+    }
+}
+
+@media (max-width:768) {
+
+}
+
+/* desafio: fazer um menu hamburguer para mobile */ 
